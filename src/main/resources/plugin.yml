@@ -1,0 +1,18 @@
+name: ChatSound
+description: When you send to chat, playSound. Also you can change volume and pitch.
+author: CIVN
+website: http://civn.org/
+main: org.civn.chatsound.ChatSound
+version: 1.0
+
+commands:
+  chatsound:
+    description: Show help.
+    usage: /chatsound - Show help.
+    permission: chatsound.help
+    permission-message: You don't have <permission>
+
+permissions:
+  chatsound.help:
+    description: You can see help.
+    default: true
