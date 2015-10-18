@@ -1,0 +1,2 @@
+# ChatSound
+A bukkit plugin.
