@@ -56,7 +56,7 @@ public class ChatSound extends JavaPlugin implements Listener
 			{
 				sender.sendMessage(prefix);
 				sender.sendMessage(GOLD + "Author: CIVN");
-				sender.sendMessage(GOLD + "Version: 1.1");
+				sender.sendMessage(GOLD + "Version: 2.0");
 				return true;
 			}
 
@@ -79,7 +79,7 @@ public class ChatSound extends JavaPlugin implements Listener
 
 					else if (vol >= 1.1)
 					{
-						sender.sendMessage(prefix + RED + "You must set volume 0~1.0!");
+						sender.sendMessage(prefix + RED + "You must set volume with 0~1.0!");
 						return false;
 					}
 
@@ -87,7 +87,7 @@ public class ChatSound extends JavaPlugin implements Listener
 					this.saveConfig();
 					this.reloadConfig();
 
-					sender.sendMessage(prefix + GOLD + "You set volume " + AQUA + conf.getDouble("Sound.volume") + GOLD + "!");
+					sender.sendMessage(prefix + GOLD + "Volume has been set to " + AQUA + conf.getDouble("Sound.volume") + GOLD + "!");
 					return true;
 				}
 
@@ -108,7 +108,7 @@ public class ChatSound extends JavaPlugin implements Listener
 
 					else if (pit >= 2.1)
 					{
-						sender.sendMessage(prefix + RED + "You must set pitch 0~2.0!");
+						sender.sendMessage(prefix + RED + "You must set pitch with 0~2.0!");
 						return false;
 					}
 
@@ -116,7 +116,7 @@ public class ChatSound extends JavaPlugin implements Listener
 					this.saveConfig();
 					this.reloadConfig();
 
-					sender.sendMessage(prefix + GOLD + "You set pitch " + AQUA + conf.getDouble("Sound.pitch") + GOLD + "!");
+					sender.sendMessage(prefix + GOLD + "Pitch has been set to " + AQUA + conf.getDouble("Sound.pitch") + GOLD + "!");
 					return true;
 				}
 
@@ -145,7 +145,7 @@ public class ChatSound extends JavaPlugin implements Listener
 					this.saveConfig();
 					this.reloadConfig();
 
-					sender.sendMessage(prefix + GOLD + "You set sound " + AQUA + conf.getString("Sound.sound") + GOLD + "!");
+					sender.sendMessage(prefix + GOLD + "Sound has been set to " + AQUA + conf.getString("Sound.sound") + GOLD + "!");
 					return true;
 				}
 
@@ -180,7 +180,7 @@ public class ChatSound extends JavaPlugin implements Listener
 
 		if (sound == null)
 		{
-			p.sendMessage(prefix + RED + "Can't load a sound name in config!");
+			p.sendMessage(prefix + RED + "Can't load the sound name in config!");
 			return;
 		}
 
